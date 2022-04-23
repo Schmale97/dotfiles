@@ -1,0 +1,17 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gitconfig:
+    ~/.zshrc:
+
+- create:
+    - ~/Morrisons
+    - ~/Repositories
+
+- shell:
+    - [./gitconfig-morrisons/create.sh, Creating Default .gitconfig-morrisons]
+#   - [git submodule update --init --recursive, Installing submodules]
