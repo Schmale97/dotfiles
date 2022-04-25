@@ -13,5 +13,11 @@
     - ~/Repositories
 
 - shell:
-    - [./gitconfig-morrisons/create.sh, Creating Default .gitconfig-morrisons]
+    - 
+      command: ./gitconfig-morrisons/create.sh
+      stdin: true
+      stdout: true
+      stderr: true
+      description: Creating Default .gitconfig-morrisons
+
 #   - [git submodule update --init --recursive, Installing submodules]
