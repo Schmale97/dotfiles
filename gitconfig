@@ -2,8 +2,8 @@
 	email = 71267909+Schmale97@users.noreply.github.com
 	name = Callum Smale
 
-[includeIf "gitdir:~/Morrisons/"]
-	path = ~/.gitconfig-morrisons
-
 [core]
 	editor = code --wait
+
+[includeIf "gitdir:~/Morrisons/"]
+	path = ~/.gitconfig-morrisons

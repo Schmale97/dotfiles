@@ -14,10 +14,10 @@
 
 - shell:
     - 
-      command: ./gitconfig-morrisons/create.sh
+      command: ./gitconfig-work/create.sh .gitconfig-morrisons
       stdin: true
       stdout: true
       stderr: true
-      description: Creating Default .gitconfig-morrisons
+      description: Creating .gitconfig-morrisons
 
 #   - [git submodule update --init --recursive, Installing submodules]
