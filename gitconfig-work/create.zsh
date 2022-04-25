@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 confirm_input () {
     LIMIT=10
@@ -7,7 +7,7 @@ confirm_input () {
     until [[ $ITERABLE -gt $LIMIT ]];
     do
         [[ $ITERABLE -eq 1 ]] && ATTEMPT="" || ATTEMPT="[$ITERABLE/$LIMIT] - "
-        read -p "$ATTEMPT$1 (Y/N): " CONFIRM
+        read "CONFIRM?$ATTEMPT$1 (Y/N)? "
         if [[ $CONFIRM == [yY] || $CONFIRM == [yY][eE][sS] ]];
         then
             return 0;
@@ -47,7 +47,7 @@ LIMIT=10
 ITERABLE=1
 until [[ $ITERABLE -gt $LIMIT ]];
 do
-    read -p "Please enter your work email address: " EMAIL
+    read "EMAIL?Please enter your work email address: "
     confirm_input "Is this email correct?" && break || true
     ITERABLE=$((ITERABLE+1))
 done

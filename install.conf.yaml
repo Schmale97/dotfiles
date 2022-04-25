@@ -14,7 +14,7 @@
 
 - shell:
     - 
-      command: ./gitconfig-work/create.sh .gitconfig-morrisons
+      command: ./gitconfig-work/create.zsh .gitconfig-morrisons
       stdin: true
       stdout: true
       stderr: true
