@@ -1,11 +1,12 @@
-# Set Variables
+### Set Variables
+# Syntax highlighting for man pages using bat
+export MANPAGER="sh -c 'col-bx | bat -l man"
+### Change ZSH Options
 
-# Change ZSH Options
-
-# Create Aliases
+### Create Aliases
 alias ls='ls -lAFh -C=tty'
 
-# Customize Prompt(s)
+### Customize Prompt(s)
 %(?:%{%}➜ :%{%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(firebase_prompt_info)$(git_prompt_info)
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 PROMPT+=' %{$fg[cyan]%}%c%{$reset_color%} $(firebase_prompt_info)$(git_prompt_info)'
@@ -17,9 +18,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 ZSH_THEME_FIREBASE_PROMPT_PREFIX="%{$fg_bold[yellow]%}firebase:(%{$fg[magenta]%}"
 ZSH_THEME_FIREBASE_PROMPT_SUFFIX="%{$fg[yellow]%})%{$reset_color%} "
 
-# Add Locations to $PATH Variable
+### Add Locations to $PATH Variable
 
-# Write Handy Functions
+### Write Handy Functions
 function firebase_prompt_info() {
   local active_project=$(echo $(grep \"$(detect_firebase_project_root)\" ~/.config/configstore/firebase-tools.json | awk -F'[ ,]' '{print $2}')| sed -e 's/\"//g')
   if [[ -n $active_project ]]; then
@@ -35,6 +36,6 @@ function detect_firebase_project_root() {
   echo "$project_root_path"
 }
 
-# Use ZSH Plugins
+### Use ZSH Plugins
 
-# ...and Other Surprises
+### ...and Other Surprises

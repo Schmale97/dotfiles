@@ -29,3 +29,5 @@ TMOUT=5
 TRAPALRM() {
     zle reset-prompt
 }
+
+alias ls='ls -lAFh --color=tty'

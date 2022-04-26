@@ -19,5 +19,11 @@
       stdout: true
       stderr: true
       description: Creating .gitconfig-morrisons
+    - 
+      command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
+      description: Setting up Homebrew
+    
 
 #   - [git submodule update --init --recursive, Installing submodules]
