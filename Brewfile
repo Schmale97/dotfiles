@@ -6,7 +6,8 @@ tap "homebrew/core"
 # Brews (Packages)
 brew "bat"
 brew "httpie"
+brew "exa"
 
-#Casks (Applications)
-cask "google-chrome" 
-cask "visual-studio-code"
+# #Casks (Applications)
+# cask "google-chrome" 
+# cask "visual-studio-code"

@@ -5,5 +5,8 @@
 [core]
 	editor = code --wait
 
+[merge]
+	conflictstyle = diff3
+
 [includeIf "gitdir:~/Morrisons/"]
-	path = ~/.gitconfig-morrisons
+	path = ~/.gitconfig-Morrisons

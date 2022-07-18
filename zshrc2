@@ -1,10 +1,17 @@
 ### Set Variables
-# Syntax highlighting for man pages using bat
-export MANPAGER="sh -c 'col-bx | bat -l man"
+
 ### Change ZSH Options
 
 ### Create Aliases
-alias ls='ls -lAFh -C=tty'
+alias ls='exa'
+alias exa='exa -laFh --git'
+alias trail='<<<${(F)path}'
+alias ftrail='<<<${(F)fpath}'
+alias rm=trash
+alias man=batman
+alias bbd="brew bundle dump --force --describe"
+# Load history into shell (shareHistory alternative)
+alias lh='fc -RI; echo "loaded and showing..."; history;'
 
 ### Customize Prompt(s)
 %(?:%{%}➜ :%{%}➜ ) %{$fg[cyan]%}%c%{$reset_color%} $(firebase_prompt_info)$(git_prompt_info)
@@ -18,7 +25,13 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 ZSH_THEME_FIREBASE_PROMPT_PREFIX="%{$fg_bold[yellow]%}firebase:(%{$fg[magenta]%}"
 ZSH_THEME_FIREBASE_PROMPT_SUFFIX="%{$fg[yellow]%})%{$reset_color%} "
 
+TMOUT=10
+TRAPALRM() {
+    zle reset-prompt
+}
+
 ### Add Locations to $PATH Variable
+
 
 ### Write Handy Functions
 function firebase_prompt_info() {
@@ -34,6 +47,10 @@ function detect_firebase_project_root() {
     project_root_path=${project_root_path%/*}
   done
   echo "$project_root_path"
+}
+
+function mkcd () {
+  mkdir -p "$@" && cd "%_";
 }
 
 ### Use ZSH Plugins

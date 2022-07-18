@@ -1,4 +1,5 @@
 export CAPACITOR_ANDROID_STUDIO_PATH="/snap/android-studio/current/android-studio/bin/studio.sh"
+export PATH="$HOME/.tfenv/bin:$PATH"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -25,9 +26,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 TMOUT=5
-
 TRAPALRM() {
     zle reset-prompt
 }
 
 alias ls='ls -lAFh --color=tty'
+
+# pnpm
+export PNPM_HOME="/home/callum/.local/share/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
