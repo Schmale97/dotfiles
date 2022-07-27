@@ -60,7 +60,7 @@ bindkey '^[[B' history-substring-search-down
 ###############################################
 
 eval "$(starship init zsh)"
-TMOUT=1
+TMOUT=10
 TRAPALRM() {
     zle reset-prompt
 }

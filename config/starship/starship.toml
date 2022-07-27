@@ -13,7 +13,7 @@ $shell\
 $character"""
 
 [git_metrics]
-disable=false
+disabled=false
 
 [time]
 disabled=false
@@ -26,11 +26,11 @@ disabled=false
 
 [shlvl]
 disabled=false
-echo $(dirname -- $0)
+
 [custom.firebase]
-command = "echo $(dirname -- $0)"
+command = "$DOTFILES/config/starship/firebase/command.sh"
 detect_files = []
-when = "true" #""" [[ -n $($( dirname -- "$0"; )/firebase/get_firebase_dir.sh) ]] """
+when = """ [[ -n $($DOTFILES/config/starship/firebase/get_firebase_dir.sh) ]] """
 symbol = "🔥"
 style = "bold yellow"
 format = "[$symbol $output]($style) "
