@@ -1,0 +1,38 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# A minimal left prompt
+format = """
+$all\
+${custom.firebase}\
+$line_break\
+$jobs\
+$battery\
+$time\
+$status\
+$shell\
+$character"""
+
+[git_metrics]
+disable=false
+
+[time]
+disabled=false
+
+[status]
+disabled=false
+
+[shell]
+disabled=false
+
+[shlvl]
+disabled=false
+echo $(dirname -- $0)
+[custom.firebase]
+command = "echo $(dirname -- $0)"
+detect_files = []
+when = "true" #""" [[ -n $($( dirname -- "$0"; )/firebase/get_firebase_dir.sh) ]] """
+symbol = "🔥"
+style = "bold yellow"
+format = "[$symbol $output]($style) "
+shell = ["bash", "--noprofile", "--norc"]
+

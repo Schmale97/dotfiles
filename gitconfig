@@ -8,5 +8,8 @@
 [merge]
 	conflictstyle = diff3
 
+[pull]
+	rebase = false
+
 [includeIf "gitdir:~/Morrisons/"]
 	path = ~/.gitconfig-Morrisons

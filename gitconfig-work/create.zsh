@@ -7,12 +7,12 @@ confirm_input () {
     until [[ $ITERABLE -gt $LIMIT ]];
     do
         [[ $ITERABLE -eq 1 ]] && ATTEMPT="" || ATTEMPT="[$ITERABLE/$LIMIT] - "
-        read "CONFIRM?$ATTEMPT$1 (Y/N)? "
+        read -t 10 "CONFIRM?$ATTEMPT$1 (Y/N)? "
         if [[ $CONFIRM == [yY] || $CONFIRM == [yY][eE][sS] ]];
         then
             return 0;
         fi
-        if [[ $CONFIRM == [nN] || $CONFIRM == [nN][oO] ]];
+        if [[ $CONFIRM == [nN] || $CONFIRM == [nN][oO] || -z $CONFIRM ]];
         then
             return 1;
         fi
@@ -51,9 +51,10 @@ do
     confirm_input "Is this email correct?" && break || true
     ITERABLE=$((ITERABLE+1))
 done
+
 touch ~/$CONFIG_FILE
 cat ./gitconfig-work/template-work-profile > ~/$CONFIG_FILE 
-sed -i "s/<<Email>>/$EMAIL/g" ~/$CONFIG_FILE
+sed -i '' "s/<<Email>>/$EMAIL/g" ~/$CONFIG_FILE
 
 if [[ $EDIT_FILE = "CREATE" ]]
 then

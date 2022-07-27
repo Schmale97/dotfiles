@@ -1,13 +1,40 @@
-#Taps
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/core"
-
-# Brews (Packages)
+# Shell plugin manager
+brew "antibody"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-brew "httpie"
+# Modern replacement for 'ls'
 brew "exa"
-
-# #Casks (Applications)
-# cask "google-chrome" 
-# cask "visual-studio-code"
+# Distributed revision control system
+brew "git"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Mac App Store command-line interface
+brew "mas"
+# Manage multiple Node.js versions
+brew "nvm"
+# 📦🚀 Fast, disk space efficient package manager
+brew "pnpm"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Tools for building Android applications
+cask "android-studio"
+cask "font-fira-mono-nerd-font"
+# Web browser
+cask "google-chrome"
+# Store credentials in a single place and log in on any device, even when offline
+cask "nordpass"
+# VPN client for secure internet access and private browsing
+cask "nordvpn"
+# Music streaming service
+cask "spotify"
+# Open-source code editor
+cask "visual-studio-code"
+mas "Xcode", id: 497799835

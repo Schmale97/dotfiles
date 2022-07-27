@@ -1,6 +1,9 @@
 - defaults:
     link:
       relink: true
+    shell:
+      stdout: true
+      stderr: true
 
 - clean: ['~']
 
@@ -11,23 +14,28 @@
     ~/.config/bat:
       create: true
       path: config/bat
+    ~/.config/starship.toml:
+      create: true
+      path: config/starship/starship.toml
+    
 
 - create:
     - ~/Morrisons
     - ~/Repositories
+    - ~/.nvm
 
 - shell:
-    - 
-      command: ./gitconfig-work/create.zsh .gitconfig-morrisons
-      stdin: true
-      stdout: true
-      stderr: true
-      description: Creating .gitconfig-morrisons
-    - 
-      command: ./setup_homebrew.zsh
-      stdout: true
-      stderr: true
+    - command: ./setup_homebrew.zsh
       description: Setting up Homebrew
+    - command: ./setup_antidote.zsh
+      description: Setting up Antidote
+    - command: ./setup_zsh.zsh
+      description: Setting up ZSH
+    - command: ./setup_node.zsh
+      description: Setting up Node
+    - command: ./gitconfig-work/create.zsh .gitconfig-morrisons
+      description: Creating .gitconfig-morrisons
+      stdin: true
     
 
 #   - [git submodule update --init --recursive, Installing submodules]
