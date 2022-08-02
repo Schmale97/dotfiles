@@ -14,4 +14,3 @@ do
 			dir=$(dirname ${dir:A})
 	fi
 done
-echo $HOME
