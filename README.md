@@ -1,6 +1,6 @@
 # dotfiles
 
-This repo is based on this [repo](https://github.com/eieioxyz/dotfiles_macos), using the dotfiles course we can be found at at [](dotfiles.eieio.xyz). 
+This repo is based on this [repo](https://github.com/eieioxyz/dotfiles_macos), using the dotfiles course we can be found at [dotfiles.eieio.xyz](dotfiles.eieio.xyz). 
 
 Highly recommend checking it out!
 
