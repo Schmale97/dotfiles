@@ -1,6 +1,9 @@
-# Foobar
+# dotfiles
 
-Foobar is a Python library for dealing with word pluralization.
+This repo is based on this [repo](https://github.com/eieioxyz/dotfiles_macos), using the dotfiles course we can be found at at dotfiles.eieio.xyz. 
+
+Highly recommend checking it out!
+
 
 ## Installation
 
@@ -27,9 +30,10 @@ foobar.singularize('phenomena')
 
 ## Updating Submodules (If Required)
 ```
-<!-- Get latest remote version for all submodules -->
+# Get latest remote version for all submodules
 git submodule update --remote --merge
-<!-- Commit and push -->
+
+# Commit and push
 git add .
 git commit -m"Update submodules"
 git push
