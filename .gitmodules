@@ -1,7 +1,7 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-    dirty = true
+	dirty = true
 [submodule "antidote"]
 	path = antidote
 	url = https://github.com/mattmc3/antidote.git

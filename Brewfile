@@ -2,8 +2,6 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-# Shell plugin manager
-brew "antibody"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Modern replacement for 'ls'
@@ -24,8 +22,6 @@ brew "starship"
 brew "terraform"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Tools for building Android applications
-cask "android-studio"
 cask "font-fira-mono-nerd-font"
 # Web browser
 cask "google-chrome"

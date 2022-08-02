@@ -28,6 +28,7 @@ setopt globDots
 
 ############### Create Aliases ################
 alias ls='exa'
+alias cat='bat'
 alias exa='exa -laFh --git'
 alias trail='<<<${(F)path}'
 alias ftrail='<<<${(F)fpath}'
@@ -41,10 +42,10 @@ alias npm="$DOTFILES/npm.zsh"
 ### Add Locations to $PATH Variable
 
 path=(
+  $(brew --prefix)/bin 
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
-
 # Remove duplicates from path
 typeset -U path
 
