@@ -2,7 +2,7 @@
 
 dir="$(pwd)"
 # Keep checking up, we may be in a subdir
-while [[ $dir != '/' &&  $dir != $HOME ]]
+while [[ $dir != '/' && $dir != $HOME ]]
 do
 	target="$dir/firebase.json"
 
