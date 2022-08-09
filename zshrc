@@ -25,7 +25,6 @@ setopt autoCd
 setopt globDots
 ###############################################
 
-
 ############### Create Aliases ################
 alias ls='exa'
 alias cat='bat'
@@ -36,21 +35,21 @@ alias rm=trash
 alias bbd="brew bundle dump --force --describe"
 # Load history into shell (shareHistory alternative)
 alias lh='fc -RI; echo "loaded and showing..."; history;'
-alias npm="$DOTFILES/npm.zsh npm"
-alias pnpm="$DOTFILES/npm.zsh pnpm"
-alias yarn="$DOTFILES/npm.zsh yarn"
+alias npm="$DOTFILES/scripts/node_package_managers.zsh npm"
+alias pnpm="$DOTFILES/scripts/node_package_managers.zsh pnpm"
+alias yarn="$DOTFILES/scripts/node_package_managers.zsh yarn"
 alias pn='pnpm'
 ###############################################
 
-### Add Locations to $PATH Variable
-
+####### Add Locations to $PATH Variable #######
 path=(
-  $(brew --prefix)/bin 
+  $HOME/.cargo/bin 
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
 # Remove duplicates from path
 typeset -U path
+###############################################
 
 ############### Use ZSH Plugins ###############
 # Load statically generatted antibody 
@@ -63,10 +62,13 @@ bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 ###############################################
 
+############## Customise Prompt ###############
 eval "$(starship init zsh)"
 TMOUT=10
 TRAPALRM() {
     zle reset-prompt
 }
+###############################################
 
-### OTHER
+################### OTHER #####################
+###############################################

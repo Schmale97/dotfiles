@@ -28,9 +28,9 @@ disabled=false
 disabled=false
 
 [custom.firebase]
-command = "$DOTFILES/config/starship/firebase/command.sh"
+command = "$DOTFILES/scripts/starship-firebase/command.sh"
 detect_files = []
-when = """ [[ -n $($DOTFILES/config/starship/firebase/get_firebase_dir.sh) ]] """
+when = """ [[ -n $($DOTFILES/scripts/starship-firebase/get_firebase_dir.sh) ]] """
 symbol = "🔥"
 style = "bold yellow"
 format = "[$symbol $output]($style) "

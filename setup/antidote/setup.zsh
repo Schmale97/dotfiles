@@ -6,4 +6,4 @@ git submodule update --init --recursive "${ANTIDOTE_DIR}"
 
 . $ANTIDOTE_DIR/antidote.zsh
 
-antidote bundle < $DOTFILES/zsh_plugins.txt > $DOTFILES/zsh_plugins.zsh
+antidote bundle < $(dirname $0)/zsh_plugins.txt > $DOTFILES/zsh_plugins.zsh

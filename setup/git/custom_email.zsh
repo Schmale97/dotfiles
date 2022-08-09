@@ -53,7 +53,8 @@ do
 done
 
 touch ~/$CONFIG_FILE
-cat ./gitconfig-work/template-work-profile > ~/$CONFIG_FILE 
+cat $(dirname $0)/custom_email.txt > ~/$CONFIG_FILE 
+
 sed -i '' "s/<<Email>>/$EMAIL/g" ~/$CONFIG_FILE
 
 if [[ $EDIT_FILE = "CREATE" ]]

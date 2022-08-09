@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-firebase_dir=$($DOTFILES/config/starship/firebase/get_firebase_dir.sh)
+firebase_dir=$($(dirname $0)/get_firebase_dir.sh)
 
 function get_config_project_id() {
 	if [[ -e ~/.config/configstore/firebase-tools.json ]]

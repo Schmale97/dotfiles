@@ -9,3 +9,4 @@ else
 fi
 
 brew bundle --verbose
+brew cleanup

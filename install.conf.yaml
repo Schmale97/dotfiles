@@ -16,24 +16,23 @@
       path: config/bat
     ~/.config/starship.toml:
       create: true
-      path: config/starship/starship.toml
+      path: config/starship.toml
     
 
 - create:
     - ~/Morrisons
     - ~/Repositories
-    - ~/.nvm
 
 - shell:
-    - command: ./setup_homebrew.zsh
+    - command: ./setup/homebrew/setup.zsh
       description: Setting up Homebrew
-    - command: ./setup_antidote.zsh
+    - command: ./setup/antidote/setup.zsh
       description: Setting up Antidote
-    - command: ./setup_zsh.zsh
+    - command: ./setup/zsh/setup.zsh
       description: Setting up ZSH
-    - command: ./setup_node.zsh
+    - command: ./setup/node/setup.zsh
       description: Setting up Node
-    - command: ./gitconfig-work/create.zsh .gitconfig-morrisons
+    - command: ./setup/git/custom_email.zsh .gitconfig-morrisons
       description: Creating .gitconfig-morrisons
       stdin: true
     

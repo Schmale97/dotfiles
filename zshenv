@@ -1,10 +1,11 @@
 # Set directory for dotfiles repo
 export DOTFILES="$HOME/.dotfiles"
-export NPM_PATH=$(which npm)
 
+#Setup Homebrew in shell
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-source "$(brew --prefix nvm)/nvm.sh"
+#Setup nvm in shell
+. "$(brew --prefix nvm)/nvm.sh"
 
 function exists () {
   command -v $1 >/dev/null 2>&1
