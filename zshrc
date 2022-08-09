@@ -36,7 +36,10 @@ alias rm=trash
 alias bbd="brew bundle dump --force --describe"
 # Load history into shell (shareHistory alternative)
 alias lh='fc -RI; echo "loaded and showing..."; history;'
-alias npm="$DOTFILES/npm.zsh"
+alias npm="$DOTFILES/npm.zsh npm"
+alias pnpm="$DOTFILES/npm.zsh pnpm"
+alias yarn="$DOTFILES/npm.zsh yarn"
+alias pn='pnpm'
 ###############################################
 
 ### Add Locations to $PATH Variable
