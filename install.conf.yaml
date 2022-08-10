@@ -9,14 +9,17 @@
 
 - link:
     ~/.zshrc:
+      path: symlinks/zshrc
     ~/.zshenv:
+      path: symlinks/zshenv
     ~/.gitconfig:
+      path: symlinks/gitconfig
     ~/.config/bat:
       create: true
-      path: config/bat
+      path: symlinks/config/bat
     ~/.config/starship.toml:
       create: true
-      path: config/starship.toml
+      path: symlinks/config/starship.toml
     
 
 - create:
