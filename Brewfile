@@ -2,6 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
+tap "mas-cli/mas"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Pack, ship and run any application as a lightweight container
