@@ -43,6 +43,7 @@ alias pn='pnpm'
 
 ####### Add Locations to $PATH Variable #######
 path=(
+  $(brew --prefix)/bin
   $HOME/.cargo/bin 
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
