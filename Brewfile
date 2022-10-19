@@ -11,8 +11,6 @@ brew "docker"
 brew "exa"
 # Distributed revision control system
 brew "git"
-# Development kit for the Java programming language
-brew "openjdk"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -23,6 +21,8 @@ brew "mas"
 brew "neovim"
 # Manage multiple Node.js versions
 brew "nvm"
+# Development kit for the Java programming language
+brew "openjdk"
 # Development kit for the Java programming language
 brew "openjdk@11"
 # 📦🚀 Fast, disk space efficient package manager
@@ -46,6 +46,8 @@ cask "google-chrome"
 cask "nordpass"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# WebKit based web browser
+cask "orion"
 # Collaboration platform for API development
 cask "postman"
 # Music streaming service

@@ -14,12 +14,19 @@
       path: symlinks/zshenv
     ~/.gitconfig:
       path: symlinks/gitconfig
+    ~/.tmux.conf:
+      path: symlinks/tmux.conf
+    ~/.vimrc:
+      path: symlinks/vimrc
     ~/.config/bat:
       create: true
       path: symlinks/config/bat
     ~/.config/starship.toml:
       create: true
       path: symlinks/config/starship.toml
+    ~/.config/alacritty.yml:
+      create: true
+      path: symlinks/config/alacritty.yml
     
 
 - create:
@@ -38,6 +45,3 @@
     - command: ./setup/git/custom_email.zsh .gitconfig-morrisons
       description: Creating .gitconfig-morrisons
       stdin: true
-    
-
-#   - [git submodule update --init --recursive, Installing submodules]

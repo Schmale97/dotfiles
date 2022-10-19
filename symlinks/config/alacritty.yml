@@ -1,0 +1,10 @@
+env:
+  TERM: alacritty
+
+window:
+  dynamic_padding: true
+  startup_mode: Fullscreen
+
+shell:
+  program: /opt/homebrew/bin/tmux
+
