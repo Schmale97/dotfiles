@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "mas-cli/mas"
@@ -39,9 +40,13 @@ brew "tmux"
 brew "zsh"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Tools for building Android applications
+cask "android-studio"
 cask "font-fira-mono-nerd-font"
 # Web browser
 cask "google-chrome"
+# Support for Logitech G gear
+cask "logitech-g-hub"
 # Store credentials in a single place and log in on any device, even when offline
 cask "nordpass"
 # VPN client for secure internet access and private browsing
@@ -54,4 +59,5 @@ cask "postman"
 cask "spotify"
 # Open-source code editor
 cask "visual-studio-code"
+mas "MuteKey", id: 1509590766
 mas "Xcode", id: 497799835
