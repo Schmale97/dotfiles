@@ -2,7 +2,7 @@
 export DOTFILES="$HOME/.dotfiles"
 
 #Setup Homebrew in shell
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/usr/local/Homebrew/bin/brew shellenv)"
 
 #Setup nvm in shell
 . "$(brew --prefix nvm)/nvm.sh"

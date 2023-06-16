@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "mas-cli/mas"
@@ -47,33 +46,33 @@ brew "tmux"
 # UNIX shell (command interpreter)
 brew "zsh"
 # GPU-accelerated terminal emulator
-cask "alacritty"
+cask "alacritty", args: { no_quarantine: true }
 # Tools for building Android applications
-cask "android-studio"
+cask "android-studio", { no_quarantine: true }
 # Developer targeted fonts with a high number of glyphs
-cask "font-fira-mono-nerd-font"
+cask "font-fira-mono-nerd-font", { no_quarantine: true }
 # Web browser
-cask "google-chrome"
+cask "google-chrome", { no_quarantine: true }
 # Set of tools to manage resources and applications hosted on Google Cloud
-cask "google-cloud-sdk"
+cask "google-cloud-sdk", { no_quarantine: true }
 # IDE for Java development - community edition
-cask "intellij-idea-ce"
+cask "intellij-idea-ce", { no_quarantine: true }
 # Software for Logitech devices
-cask "logi-options-plus"
+cask "logi-options-plus", { no_quarantine: true }
 # Support for Logitech G gear
-cask "logitech-g-hub"
-# Password manager
-cask "nordpass"
+cask "logitech-g-hub", args: { no_quarantine: true }
+# Store credentials in a single place and log in on any device, even when offline
+cask "nordpass", args: { no_quarantine: true }
 # VPN client for secure internet access and private browsing
-cask "nordvpn"
+cask "nordvpn", args: { no_quarantine: true }
 # WebKit based web browser
-cask "orion"
+cask "orion", args: { no_quarantine: true }
 # Collaboration platform for API development
-cask "postman"
+cask "postman", args: { no_quarantine: true }
 # Music streaming service
-cask "spotify"
+cask "spotify", args: { no_quarantine: true }
 # Open-source code editor
-cask "visual-studio-code"
+cask "visual-studio-code", args: { no_quarantine: true }
 mas "Xcode", id: 497799835
 vscode "42Crunch.vscode-openapi"
 vscode "aaron-bond.better-comments"
