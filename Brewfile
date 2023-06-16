@@ -19,7 +19,7 @@ brew "openjdk@17"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
 brew "gradle"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3"
+brew "python@3.11"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Mac App Store command-line interface
