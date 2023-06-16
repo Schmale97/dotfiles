@@ -45,6 +45,7 @@ alias pn='pnpm'
 path=(
   $(brew --prefix)/bin
   $HOME/.cargo/bin 
+  "/opt/homebrew/opt/openjdk/bin"
   $path
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 )
