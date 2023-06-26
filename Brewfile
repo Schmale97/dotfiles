@@ -26,8 +26,6 @@ brew "httpie"
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Manage multiple Node.js versions
-brew "nvm"
 # Development kit for the Java programming language
 brew "openjdk"
 # Development kit for the Java programming language

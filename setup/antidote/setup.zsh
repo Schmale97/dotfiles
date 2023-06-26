@@ -6,4 +6,7 @@ git submodule update --init --recursive "${ANTIDOTE_DIR}"
 
 . $ANTIDOTE_DIR/antidote.zsh
 
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
+export NVM_AUTO_USE=true
 antidote bundle < $(dirname $0)/zsh_plugins.txt > $DOTFILES/zsh_plugins.zsh
