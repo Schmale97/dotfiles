@@ -3,6 +3,8 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "mas-cli/mas"
+# Plugin manager for zsh, inspired by antigen and antibody
+brew "antidote"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Dependency manager for Cocoa projects
@@ -29,7 +31,7 @@ brew "neovim"
 brew "openjdk"
 # Development kit for the Java programming language
 brew "openjdk@11"
-# 📦🚀 Fast, disk space efficient package manager
+# Fast, disk space efficient package manager
 brew "pnpm"
 # Rust toolchain installer
 brew "rustup-init"
@@ -41,6 +43,8 @@ brew "terraform"
 brew "terraformer"
 # Terminal multiplexer
 brew "tmux"
+# CLI tool that moves files or folder to the trash
+brew "trash"
 # UNIX shell (command interpreter)
 brew "zsh"
 # GPU-accelerated terminal emulator

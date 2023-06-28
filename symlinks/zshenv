@@ -2,7 +2,7 @@
 export DOTFILES="$HOME/.dotfiles"
 
 #Setup Homebrew in shell
-eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+eval "$(/opt/Homebrew/bin/brew shellenv)"
 
 function exists () {
   command -v $1 >/dev/null 2>&1
