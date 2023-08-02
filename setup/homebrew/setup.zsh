@@ -8,5 +8,5 @@ else
     eval "$($HOMEBREW_PREFIX/bin/brew shellenv)"
 fi
 
-brew bundle --verbose
+brew bundle --verbose --cleanup
 brew cleanup --verbose

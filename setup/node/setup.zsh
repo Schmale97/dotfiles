@@ -13,6 +13,9 @@ else
   echo "Current node verison $(nvm current)"
 fi
 
+corepack enable
+corepack prepare pnpm@latest --activate
+
 # # Install Global NPM Packages
 npm install --location=global firebase-tools
 npm install --location=global trash-cli
